@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EsXml_Paganelli_Rossi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="#FFF3FF00">
     <Grid>
-        
+        <Label Content="Elenco titoli libri autore inserito in input" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Titolo/autore libro corrispondente a keywords in input" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Width="299"/>
+        <Button x:Name="btn_Find_Print1" Content="Cerca e Stampa" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="220" Click="btn_Find_Print1_Click"/>
+        <Button x:Name="btn_Find_Print2" Content="Cerca e Stampa" HorizontalAlignment="Left" Margin="250,69,0,0" VerticalAlignment="Top" Width="299" Click="btn_Find_Print2_Click"/>
+        <TextBox x:Name="txt_InputAuthor" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" Text="Inserisci autore" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="txt_InputKeywords" HorizontalAlignment="Left" Height="23" Margin="250,41,0,0" TextWrapping="Wrap" Text="Inserisci una o più keyword " VerticalAlignment="Top" Width="299"/>
+        <Label Content="numero dei libri pubblicati dopo il 2011" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_Find_Print3" Content="Stampa" HorizontalAlignment="Left" Margin="562,41,0,0" VerticalAlignment="Top" Width="220" Height="48" Click="btn_Find_Print3_Click"/>
+
     </Grid>
 </Window>
