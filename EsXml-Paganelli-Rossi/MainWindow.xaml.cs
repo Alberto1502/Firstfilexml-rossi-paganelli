@@ -27,17 +27,9 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_Crea_Click(object sender, RoutedEventArgs e)
         {
-            //XDocument xmlDocument = XDocument.Load(@"Z:\Tpi\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libri.xml");
-            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml", System.Text.Encoding.UTF8), LoadOptions.None);
 
-            IEnumerable<string> names = from libri in xmlDoc.Descendants("wiride")
-                                        where libri.Element("codice_scheda").Value == "M-FKB0GR01"
-                                        select libri.Element("titolo").Element("proprio").Value;
+            
 
-            foreach (string nomi in names)
-                MessageBox.Show(nomi);
-
-            // xmlDoc.Save(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml");
         }
 
         private void BtnFile_Click(object sender, RoutedEventArgs e)
@@ -49,7 +41,19 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Ciao");
+            lst1.Items.Clear();
+
+            string cognome = txt_InputAuthor.Text;
+
+            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml"));
+
+            IEnumerable<string> names = from libri in XDocument.Load(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml").Elements("Biblioteca").Elements("wiride")
+                                        where (string)libri.Element("autore").Element("cognome") == cognome
+                                        select libri.Element("titolo").Value;
+
+
+            foreach (string n in names)
+                lst1.Items.Add(n);
         }
 
         private void btn_Find_Print2_Click(object sender, RoutedEventArgs e)

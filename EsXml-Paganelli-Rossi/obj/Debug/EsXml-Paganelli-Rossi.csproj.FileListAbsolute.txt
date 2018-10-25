@@ -1,0 +1,15 @@
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\bin\Debug\EsXml-Paganelli-Rossi.exe.config
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\bin\Debug\EsXml-Paganelli-Rossi.exe
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\bin\Debug\EsXml-Paganelli-Rossi.pdb
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\EsXml-Paganelli-Rossi.csprojAssemblyReference.cache
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\MainWindow.g.cs
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\App.g.cs
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\EsXml-Paganelli-Rossi_MarkupCompile.cache
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\EsXml-Paganelli-Rossi_MarkupCompile.lref
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\MainWindow.baml
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\EsXml-Paganelli-Rossi.g.resources
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\EsXml_Paganelli_Rossi.Properties.Resources.resources
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\EsXml-Paganelli-Rossi.csproj.GenerateResource.cache
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\EsXml-Paganelli-Rossi.csproj.CoreCompileInputs.cache
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\EsXml-Paganelli-Rossi.exe
+C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\EsXml-Paganelli-Rossi.pdb
