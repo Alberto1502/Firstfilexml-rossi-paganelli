@@ -5,16 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EsXml_Paganelli_Rossi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="#FFF3FF00">
+        Title="FirstExXML-Atanasov_Paganelli_Rossi" Height="550" Width="920" Background="#FFF3FF00">
     <Grid>
         <Label Content="Elenco titoli libri autore inserito in input" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="220"/>
-        <Label Content="Titolo/autore libro corrispondente a keywords in input" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Width="299"/>
         <Button x:Name="btn_Find_Print1" Content="Cerca e Stampa" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="220" Click="btn_Find_Print1_Click"/>
-        <Button x:Name="btn_Find_Print2" Content="Cerca e Stampa" HorizontalAlignment="Left" Margin="250,69,0,0" VerticalAlignment="Top" Width="299" Click="btn_Find_Print2_Click"/>
         <TextBox x:Name="txt_InputAuthor" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" Text="Inserisci autore" VerticalAlignment="Top" Width="220"/>
-        <TextBox x:Name="txt_InputKeywords" HorizontalAlignment="Left" Height="23" Margin="250,41,0,0" TextWrapping="Wrap" Text="Inserisci una o più keyword " VerticalAlignment="Top" Width="299"/>
-        <Label Content="numero dei libri pubblicati dopo il 2011" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_Find_Print3" Content="Stampa" HorizontalAlignment="Left" Margin="562,41,0,0" VerticalAlignment="Top" Width="220" Height="48" Click="btn_Find_Print3_Click"/>
+        <ListBox x:Name="lst_Print" HorizontalAlignment="Left" Height="399" Margin="472,10,0,0" VerticalAlignment="Top" Width="430"/>
+        <Button x:Name="btn_DeleteTagAbstract" Content="Elimina tag abstract dal documento" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top" Width="220" Click="btn_DeleteTagAbstract_Click"/>
+        <Label Content=" numero di copie libro , inserito titolo in input" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="256"/>
+        <TextBox x:Name="txt_InputTitle" HorizontalAlignment="Left" Height="23" Margin="10,141,0,0" TextWrapping="Wrap" Text="Inserisci titolo del libro da cercare" VerticalAlignment="Top" Width="256"/>
+        <Button x:Name="btn_FindNCopies" Content="Cerca e stampa" HorizontalAlignment="Left" Margin="10,169,0,0" VerticalAlignment="Top" Width="256" Click="btn_FindNCopies_Click"/>
+        <Label Content="numero dei libri di genere &quot;romanzo&quot;" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" Width="256"/>
+        <Button x:Name="btn_FindAllRomance" Content="Cerca e Stampa" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="256"/>
+        <TextBox x:Name="txt_ChangeKind_Title" HorizontalAlignment="Left" Height="23" Margin="10,374,0,0" TextWrapping="Wrap" Text="Inserisci il titolo del libro di cui si vuole cambiare genere" VerticalAlignment="Top" Width="306" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.056"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="btn_AssignNewGender" Content="Button" HorizontalAlignment="Left" Margin="10,430,0,0" VerticalAlignment="Top" Width="305"/>
+        <TextBox x:Name="txt_NewKindOfBook" HorizontalAlignment="Left" Height="23" Margin="10,402,0,0" TextWrapping="Wrap" Text="Inserisci il nuovo genere che si vuole assegnare al libro" VerticalAlignment="Top" Width="305"/>
+        <Label Content="modifica genere di un libro, individuato con il titolo, con un valore inserito in input" HorizontalAlignment="Left" Margin="10,343,0,0" VerticalAlignment="Top" Width="457"/>
 
     </Grid>
 </Window>

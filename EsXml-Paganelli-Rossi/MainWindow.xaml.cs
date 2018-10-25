@@ -24,10 +24,9 @@ namespace EsXml_Paganelli_Rossi
             InitializeComponent();
         }
 
-
         private void btn_Crea_Click(object sender, RoutedEventArgs e)
         {
-            //XDocument xmlDocument = XDocument.Load(@"Z:\Tpi\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libri.xml");
+            XDocument xmlDocument = XDocument.Load(@"Z:\Tpi\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libri.xml");
             XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml", System.Text.Encoding.UTF8), LoadOptions.None);
 
             IEnumerable<string> names = from libri in xmlDoc.Descendants("wiride")
@@ -40,24 +39,20 @@ namespace EsXml_Paganelli_Rossi
             // xmlDoc.Save(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml");
         }
 
-        private void BtnFile_Click(object sender, RoutedEventArgs e)
-        {
-            string text = File.ReadAllText(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml", System.Text.Encoding.UTF8);
-            text = text.Replace("\r", "").Replace("\n", "");
-            File.WriteAllText(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml", text);
-        }
-
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btn_Find_Print2_Click(object sender, RoutedEventArgs e)
+        private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
         {
+            XDocument xmlDocument5 = XDocument.Load("../../Data.xml");
+            xmlDocument5.Root.Elements().Where(x => x.Attribute("Id").Value == "103").FirstOrDefault().Remove();
 
+            xmlDocument5.Save(@"../../../../Data5.xml");
         }
 
-        private void btn_Find_Print3_Click(object sender, RoutedEventArgs e)
+        private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)
         {
 
         }
