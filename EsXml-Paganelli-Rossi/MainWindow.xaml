@@ -16,6 +16,9 @@
         <Label Content="numero dei libri pubblicati dopo il 2011" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btn_Find_Print3" Content="Stampa" HorizontalAlignment="Left" Margin="562,41,0,0" VerticalAlignment="Top" Width="220" Height="48" Click="btn_Find_Print3_Click"/>
         <ListBox x:Name="lst1" HorizontalAlignment="Left" Height="252" Margin="26,122,0,0" VerticalAlignment="Top" Width="184"/>
+        <TextBox x:Name="txt_genere" HorizontalAlignment="Left" Height="23" Margin="382,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Cerca" HorizontalAlignment="Left" Margin="407,211,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label x:Name="lbl_genere" Content="" HorizontalAlignment="Left" Margin="421,255,0,0" VerticalAlignment="Top" Height="23" Width="35"/>
 
     </Grid>
 </Window>

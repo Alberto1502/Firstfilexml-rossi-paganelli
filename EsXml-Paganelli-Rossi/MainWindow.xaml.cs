@@ -55,6 +55,25 @@ namespace EsXml_Paganelli_Rossi
             foreach (string n in names)
                 lst1.Items.Add(n);
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            lst1.Items.Clear();
+
+           
+            int i = 0;
+            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"C:\Users\alberto.paganelli\Desktop\Elenco\libri.xml"));
+
+            IEnumerable<string> names = from libri in XDocument.Load(@"C:\Users\alberto.paganelli\Desktop\Elenco\libri.xml").Element("Biblioteca").Elements("wiride")
+                                        select libri.Element("genere").Value;
+
+
+
+            foreach (string n in names)
+                if (n == "romanzo" || n == "romanzo breve" || n == "romanzo giallo"|| n== "romanzo satirico" || n=="romanzo psicologico"|| n == "romanzo umoristico")
+                    i++;
+
+            lbl_genere.Content = i;
+        }
 
         private void btn_Find_Print2_Click(object sender, RoutedEventArgs e)
         {
