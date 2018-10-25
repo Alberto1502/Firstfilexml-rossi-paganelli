@@ -53,8 +53,20 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_Find_Print2_Click(object sender, RoutedEventArgs e)
         {
+            string titolo = txt_InputKeywords.Text;
+            int cont = 0;
 
-            
+            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml"));
+
+            IEnumerable<string> names = from libri in XDocument.Load(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml").Elements("Biblioteca").Elements("wiride")
+                                        where (string)libri.Element("titolo") == titolo
+                                        select libri.Element("titolo").Value;
+
+            foreach (string n in names)
+                cont++;
+
+            nCopie.Content = cont;
+
         }
 
         private void btn_Find_Print3_Click(object sender, RoutedEventArgs e)
