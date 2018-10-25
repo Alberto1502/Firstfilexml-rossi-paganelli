@@ -49,7 +49,7 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Ciao");
         }
 
         private void btn_Find_Print2_Click(object sender, RoutedEventArgs e)
