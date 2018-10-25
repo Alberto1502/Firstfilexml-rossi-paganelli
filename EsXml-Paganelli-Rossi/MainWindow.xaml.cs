@@ -58,7 +58,7 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_Find_Print2_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void btn_Find_Print3_Click(object sender, RoutedEventArgs e)
