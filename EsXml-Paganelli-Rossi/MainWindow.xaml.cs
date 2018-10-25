@@ -27,6 +27,8 @@ namespace EsXml_Paganelli_Rossi
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
 
+
+          
         }
 
         private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
@@ -39,6 +41,7 @@ namespace EsXml_Paganelli_Rossi
             element.Remove();
 
             xmlDocument.Save(@"../../../libri.xml");
+
         }
 
         private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)

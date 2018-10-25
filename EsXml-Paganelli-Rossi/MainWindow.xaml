@@ -10,6 +10,7 @@
         <Label Content="Elenco titoli libri autore inserito in input" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="220"/>
         <Button x:Name="btn_Find_Print1" Content="Cerca e Stampa" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="220" Click="btn_Find_Print1_Click"/>
         <TextBox x:Name="txt_InputAuthor" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" Text="Inserisci autore" VerticalAlignment="Top" Width="220"/>
+
         <ListBox x:Name="lst_Print" HorizontalAlignment="Left" Height="399" Margin="472,10,0,0" VerticalAlignment="Top" Width="430"/>
         <Button x:Name="btn_DeleteTagAbstract" Content="Elimina tag abstract dal documento" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top" Width="220" Click="btn_DeleteTagAbstract_Click"/>
         <Label Content=" numero di copie libro , inserito titolo in input" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="256"/>
@@ -31,6 +32,7 @@
         <TextBox x:Name="txt_NewKindOfBook" HorizontalAlignment="Left" Height="23" Margin="10,402,0,0" TextWrapping="Wrap" Text="Inserisci il nuovo genere che si vuole assegnare al libro" VerticalAlignment="Top" Width="305"/>
         <Label Content="modifica genere di un libro, individuato con il titolo, con un valore inserito in input" HorizontalAlignment="Left" Margin="10,343,0,0" VerticalAlignment="Top" Width="457"/>
         <Button x:Name="btn_CreateNewFile" Content="Crea nuovo file" HorizontalAlignment="Left" Margin="10,470,0,0" VerticalAlignment="Top" Width="305" Click="btn_CreateNewFile_Click"/>
+
 
     </Grid>
 </Window>
