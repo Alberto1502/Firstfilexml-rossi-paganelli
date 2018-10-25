@@ -27,9 +27,10 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Button x:Name="btn_AssignNewGender" Content="Button" HorizontalAlignment="Left" Margin="10,430,0,0" VerticalAlignment="Top" Width="305"/>
+        <Button x:Name="btn_AssignNewGender" Content="Assegna" HorizontalAlignment="Left" Margin="10,430,0,0" VerticalAlignment="Top" Width="305"/>
         <TextBox x:Name="txt_NewKindOfBook" HorizontalAlignment="Left" Height="23" Margin="10,402,0,0" TextWrapping="Wrap" Text="Inserisci il nuovo genere che si vuole assegnare al libro" VerticalAlignment="Top" Width="305"/>
         <Label Content="modifica genere di un libro, individuato con il titolo, con un valore inserito in input" HorizontalAlignment="Left" Margin="10,343,0,0" VerticalAlignment="Top" Width="457"/>
+        <Button x:Name="btn_CreateNewFile" Content="Crea nuovo file" HorizontalAlignment="Left" Margin="10,470,0,0" VerticalAlignment="Top" Width="305" Click="btn_CreateNewFile_Click"/>
 
     </Grid>
 </Window>

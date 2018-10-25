@@ -26,15 +26,15 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_Crea_Click(object sender, RoutedEventArgs e)
         {
-            XDocument xmlDocument = XDocument.Load(@"Z:\Tpi\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libri.xml");
-            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml", System.Text.Encoding.UTF8), LoadOptions.None);
+            //XDocument xmlDocument = XDocument.Load(@"Z:\Tpi\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libri.xml");
+            //XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml", System.Text.Encoding.UTF8), LoadOptions.None);
 
-            IEnumerable<string> names = from libri in xmlDoc.Descendants("wiride")
-                                        where libri.Element("codice_scheda").Value == "M-FKB0GR01"
-                                        select libri.Element("titolo").Element("proprio").Value;
+            //IEnumerable<string> names = from libri in xmlDoc.Descendants("wiride")
+            //                            where libri.Element("codice_scheda").Value == "M-FKB0GR01"
+            //                            select libri.Element("titolo").Element("proprio").Value;
 
-            foreach (string nomi in names)
-                MessageBox.Show(nomi);
+            //foreach (string nomi in names)
+            //    MessageBox.Show(nomi);
 
             // xmlDoc.Save(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml");
         }
@@ -46,13 +46,18 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
         {
-            XDocument xmlDocument5 = XDocument.Load("../../Data.xml");
-            xmlDocument5.Root.Elements().Where(x => x.Attribute("Id").Value == "103").FirstOrDefault().Remove();
+            //XDocument xmlDocument5 = XDocument.Load("../../Data.xml");
+            //xmlDocument5.Root.Elements().Where(x => x.Attribute("Id").Value == "103").FirstOrDefault().Remove();
 
-            xmlDocument5.Save(@"../../../../Data5.xml");
+            //xmlDocument5.Save(@"../../../../Data5.xml");
         }
 
         private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_CreateNewFile_Click(object sender, RoutedEventArgs e)
         {
 
         }

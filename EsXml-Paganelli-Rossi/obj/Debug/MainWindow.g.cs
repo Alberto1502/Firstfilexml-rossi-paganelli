@@ -136,7 +136,7 @@ namespace EsXml_Paganelli_Rossi
         internal System.Windows.Controls.TextBox txt_ChangeKind_Title;
         internal System.Windows.Controls.Button btn_AssignNewGender;
         internal System.Windows.Controls.TextBox txt_NewKindOfBook;
-        internal System.Windows.Controls.Button btn_CreateNewButton;
+        internal System.Windows.Controls.Button btn_CreateNewFile;
     }
 }
 
