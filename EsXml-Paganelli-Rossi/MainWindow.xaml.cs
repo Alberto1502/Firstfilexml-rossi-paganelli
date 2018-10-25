@@ -24,21 +24,6 @@ namespace EsXml_Paganelli_Rossi
             InitializeComponent();
         }
 
-        private void btn_Crea_Click(object sender, RoutedEventArgs e)
-        {
-            //XDocument xmlDocument = XDocument.Load(@"Z:\Tpi\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libri.xml");
-            //XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml", System.Text.Encoding.UTF8), LoadOptions.None);
-
-            //IEnumerable<string> names = from libri in xmlDoc.Descendants("wiride")
-            //                            where libri.Element("codice_scheda").Value == "M-FKB0GR01"
-            //                            select libri.Element("titolo").Element("proprio").Value;
-
-            //foreach (string nomi in names)
-            //    MessageBox.Show(nomi);
-
-            // xmlDoc.Save(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml");
-        }
-
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
 
@@ -46,10 +31,14 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
         {
-            //XDocument xmlDocument5 = XDocument.Load("../../Data.xml");
-            //xmlDocument5.Root.Elements().Where(x => x.Attribute("Id").Value == "103").FirstOrDefault().Remove();
+            XDocument xmlDocument = XDocument.Load("../../../libri.xml");
 
-            //xmlDocument5.Save(@"../../../../Data5.xml");
+            XElement element = (from xml1 in xmlDocument.Descendants("abstract")
+                                select xml1).FirstOrDefault();
+
+            element.Remove();
+
+            xmlDocument.Save(@"../../../libri.xml");
         }
 
         private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)
