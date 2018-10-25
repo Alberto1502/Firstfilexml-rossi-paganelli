@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-﻿#pragma checksum "..\..\MainWindow.xaml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "4E3C2903FB335C11B0BE3F8EBB34206672552E5C"
+#pragma checksum "..\..\MainWindow.xaml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "4E3C2903FB335C11B0BE3F8EBB34206672552E5C"
 =======
 ﻿#pragma checksum "..\..\MainWindow.xaml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "62903B502D823A6FDA3DAEFCFC074AEB639532E5"
 >>>>>>> Atanasov1
@@ -36,150 +36,157 @@ using System.Windows.Shapes;
 using System.Windows.Shell;
 
 
-namespace EsXml_Paganelli_Rossi {
-    
-    
+namespace EsXml_Paganelli_Rossi
+{
+
+
     /// <summary>
     /// MainWindow
     /// </summary>
-    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
-        
-        
-        #line 12 "..\..\MainWindow.xaml"
+    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector
+    {
+
+
+#line 12 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btn_Find_Print1;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 13 "..\..\MainWindow.xaml"
+
+#line default
+#line hidden
+
+
+#line 13 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btn_Find_Print2;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 14 "..\..\MainWindow.xaml"
+
+#line default
+#line hidden
+
+
+#line 14 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txt_InputAuthor;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 15 "..\..\MainWindow.xaml"
+
+#line default
+#line hidden
+
+
+#line 15 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txt_InputKeywords;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 17 "..\..\MainWindow.xaml"
+
+#line default
+#line hidden
+
+
+#line 17 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btn_Find_Print3;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 18 "..\..\MainWindow.xaml"
+
+#line default
+#line hidden
+
+
+#line 18 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListBox lst1;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 19 "..\..\MainWindow.xaml"
+
+#line default
+#line hidden
+
+
+#line 19 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
 <<<<<<< HEAD
         internal System.Windows.Controls.Label copie;
 =======
         internal System.Windows.Controls.Label nCopie;
 >>>>>>> Atanasov1
-        
-        #line default
-        #line hidden
-        
+
+#line default
+#line hidden
+
         private bool _contentLoaded;
-        
+
         /// <summary>
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent() {
-            if (_contentLoaded) {
+        public void InitializeComponent()
+        {
+            if (_contentLoaded)
+            {
                 return;
             }
             _contentLoaded = true;
             System.Uri resourceLocater = new System.Uri("/EsXml-Paganelli-Rossi;component/mainwindow.xaml", System.UriKind.Relative);
-            
-            #line 1 "..\..\MainWindow.xaml"
+
+#line 1 "..\..\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
-            
-            #line default
-            #line hidden
+
+#line default
+#line hidden
         }
-        
+
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
-        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target)
+        {
             switch (connectionId)
             {
-            case 1:
-            this.btn_Find_Print1 = ((System.Windows.Controls.Button)(target));
-            
-            #line 12 "..\..\MainWindow.xaml"
-            this.btn_Find_Print1.Click += new System.Windows.RoutedEventHandler(this.btn_Find_Print1_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 2:
-            this.btn_Find_Print2 = ((System.Windows.Controls.Button)(target));
-            
-            #line 13 "..\..\MainWindow.xaml"
-            this.btn_Find_Print2.Click += new System.Windows.RoutedEventHandler(this.btn_Find_Print2_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 3:
-            this.txt_InputAuthor = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 4:
-            this.txt_InputKeywords = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 5:
-            this.btn_Find_Print3 = ((System.Windows.Controls.Button)(target));
-            
-            #line 17 "..\..\MainWindow.xaml"
-            this.btn_Find_Print3.Click += new System.Windows.RoutedEventHandler(this.btn_Find_Print3_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 6:
-            this.lst1 = ((System.Windows.Controls.ListBox)(target));
-            return;
-            case 7:
+                case 1:
+                    this.btn_Find_Print1 = ((System.Windows.Controls.Button)(target));
+
+#line 12 "..\..\MainWindow.xaml"
+                    this.btn_Find_Print1.Click += new System.Windows.RoutedEventHandler(this.btn_Find_Print1_Click);
+
+#line default
+#line hidden
+                    return;
+                case 2:
+                    this.btn_Find_Print2 = ((System.Windows.Controls.Button)(target));
+
+#line 13 "..\..\MainWindow.xaml"
+                    this.btn_Find_Print2.Click += new System.Windows.RoutedEventHandler(this.btn_Find_Print2_Click);
+
+#line default
+#line hidden
+                    return;
+                case 3:
+                    this.txt_InputAuthor = ((System.Windows.Controls.TextBox)(target));
+                    return;
+                case 4:
+                    this.txt_InputKeywords = ((System.Windows.Controls.TextBox)(target));
+                    return;
+                case 5:
+                    this.btn_Find_Print3 = ((System.Windows.Controls.Button)(target));
+
+#line 17 "..\..\MainWindow.xaml"
+                    this.btn_Find_Print3.Click += new System.Windows.RoutedEventHandler(this.btn_Find_Print3_Click);
+
+#line default
+#line hidden
+                    return;
+                case 6:
+                    this.lst1 = ((System.Windows.Controls.ListBox)(target));
+                    return;
+                case 7:
 <<<<<<< HEAD
-            this.copie = ((System.Windows.Controls.Label)(target));
+                    this.copie = ((System.Windows.Controls.Label)(target));
 =======
             this.nCopie = ((System.Windows.Controls.Label)(target));
 >>>>>>> Atanasov1
-            return;
+                    return;
             }
             this._contentLoaded = true;
         }
+
+        internal System.Windows.Controls.Label nCopie;
     }
 }
 

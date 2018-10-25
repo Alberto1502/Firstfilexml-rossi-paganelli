@@ -16,11 +16,10 @@
         <Label Content="numero dei libri pubblicati dopo il 2011" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btn_Find_Print3" Content="Stampa" HorizontalAlignment="Left" Margin="562,41,0,0" VerticalAlignment="Top" Width="220" Height="48" Click="btn_Find_Print3_Click"/>
         <ListBox x:Name="lst1" HorizontalAlignment="Left" Height="252" Margin="26,122,0,0" VerticalAlignment="Top" Width="184"/>
-<<<<<<< HEAD
+
         <Label x:Name="copie" Content="" HorizontalAlignment="Left" Margin="314,104,0,0" VerticalAlignment="Top" Width="133"/>
-=======
         <Label x:Name="nCopie" Content="" HorizontalAlignment="Left" Margin="314,104,0,0" VerticalAlignment="Top" Width="133"/>
->>>>>>> Atanasov1
+
 
     </Grid>
 </Window>
