@@ -31,12 +31,20 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
-
-
+            int c = 0;
             lst_Print.Items.Clear();
 
-
             string cognome = txt_InputAuthor.Text;
+
+            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml"));
+
+            IEnumerable<string> names = from libri in XDocument.Load(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml").Elements("Biblioteca").Elements("wiride")
+                                        where (string)libri.Element("autore").Element("cognome") == cognome
+                                        select libri.Element("titolo").Value;
+
+
+            foreach (string n in names)
+                lst_Print.Items.Add(n);
         }
         private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
         {
