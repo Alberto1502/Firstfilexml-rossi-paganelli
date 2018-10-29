@@ -24,21 +24,16 @@ namespace EsXml_Paganelli_Rossi
             InitializeComponent();
         }
 
-
-
-
-
-
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
-            lst1.Items.Clear();
 
-            string cognome = txt_InputAuthor.Text;
+
+          
         }
+
         private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
         {
             XDocument xmlDocument = XDocument.Load("../../../libri.xml");
-
 
             XElement element = (from xml1 in xmlDocument.Descendants("abstract")
                                 select xml1).FirstOrDefault();
@@ -51,19 +46,6 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)
         {
-            string titolo = txt_InputKeywords.Text;
-            int cont = 0;
-
-            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml"));
-
-            IEnumerable<string> names = from libri in XDocument.Load(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml").Elements("Biblioteca").Elements("wiride")
-                                        where (string)libri.Element("titolo") == titolo
-                                        select libri.Element("titolo").Value;
-
-            foreach (string n in names)
-                cont++;
-
-            nCopie.Content = cont;
 
         }
 

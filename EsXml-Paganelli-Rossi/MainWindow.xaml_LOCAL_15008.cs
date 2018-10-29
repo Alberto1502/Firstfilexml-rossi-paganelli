@@ -25,31 +25,33 @@ namespace EsXml_Paganelli_Rossi
         }
 
 
+        private void btn_Crea_Click(object sender, RoutedEventArgs e)
+        {
 
+            
 
+        }
 
+       
 
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
             lst1.Items.Clear();
 
             string cognome = txt_InputAuthor.Text;
-        }
-        private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
-        {
-            XDocument xmlDocument = XDocument.Load("../../../libri.xml");
+
+            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml"));
+
+            IEnumerable<string> names = from libri in XDocument.Load(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml").Elements("Biblioteca").Elements("wiride")
+                                        where (string)libri.Element("autore").Element("cognome") == cognome
+                                        select libri.Element("titolo").Value;
 
 
-            XElement element = (from xml1 in xmlDocument.Descendants("abstract")
-                                select xml1).FirstOrDefault();
-
-            element.Remove();
-
-            xmlDocument.Save(@"../../../libri.xml");
-
+            foreach (string n in names)
+                lst1.Items.Add(n);
         }
 
-        private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)
+        private void btn_Find_Print2_Click(object sender, RoutedEventArgs e)
         {
             string titolo = txt_InputKeywords.Text;
             int cont = 0;
@@ -67,7 +69,7 @@ namespace EsXml_Paganelli_Rossi
 
         }
 
-        private void btn_CreateNewFile_Click(object sender, RoutedEventArgs e)
+        private void btn_Find_Print3_Click(object sender, RoutedEventArgs e)
         {
 
         }

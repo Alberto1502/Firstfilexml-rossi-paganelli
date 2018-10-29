@@ -25,49 +25,43 @@ namespace EsXml_Paganelli_Rossi
         }
 
 
+        private void btn_Crea_Click(object sender, RoutedEventArgs e)
+        {
 
+            
 
+        }
 
+        private void BtnFile_Click(object sender, RoutedEventArgs e)
+        {
+            string text = File.ReadAllText(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml", System.Text.Encoding.UTF8);
+            text = text.Replace("\r", "").Replace("\n", "");
+            File.WriteAllText(@"E:\esercizioLibriXML\esercizioLibriXML_Galbucci_Neri\esercizioLibriXML_Galbucci_Neri\libriSer.xml", text);
+        }
 
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
             lst1.Items.Clear();
 
             string cognome = txt_InputAuthor.Text;
-        }
-        private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
-        {
-            XDocument xmlDocument = XDocument.Load("../../../libri.xml");
-
-
-            XElement element = (from xml1 in xmlDocument.Descendants("abstract")
-                                select xml1).FirstOrDefault();
-
-            element.Remove();
-
-            xmlDocument.Save(@"../../../libri.xml");
-
-        }
-
-        private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)
-        {
-            string titolo = txt_InputKeywords.Text;
-            int cont = 0;
 
             XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml"));
 
             IEnumerable<string> names = from libri in XDocument.Load(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml").Elements("Biblioteca").Elements("wiride")
-                                        where (string)libri.Element("titolo") == titolo
+                                        where (string)libri.Element("autore").Element("cognome") == cognome
                                         select libri.Element("titolo").Value;
 
-            foreach (string n in names)
-                cont++;
 
-            nCopie.Content = cont;
+            foreach (string n in names)
+                lst1.Items.Add(n);
+        }
+
+        private void btn_Find_Print2_Click(object sender, RoutedEventArgs e)
+        {
 
         }
 
-        private void btn_CreateNewFile_Click(object sender, RoutedEventArgs e)
+        private void btn_Find_Print3_Click(object sender, RoutedEventArgs e)
         {
 
         }

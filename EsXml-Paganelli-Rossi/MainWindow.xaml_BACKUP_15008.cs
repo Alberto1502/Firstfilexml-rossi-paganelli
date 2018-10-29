@@ -24,21 +24,26 @@ namespace EsXml_Paganelli_Rossi
             InitializeComponent();
         }
 
+        private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
+        {
 
 
+          
+        }
 
-
+<<<<<<< HEAD
+       
 
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
             lst1.Items.Clear();
 
             string cognome = txt_InputAuthor.Text;
-        }
+=======
         private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
         {
             XDocument xmlDocument = XDocument.Load("../../../libri.xml");
-
+>>>>>>> adecaf87d420dd349acc8c1bb8484197b825eccd
 
             XElement element = (from xml1 in xmlDocument.Descendants("abstract")
                                 select xml1).FirstOrDefault();
