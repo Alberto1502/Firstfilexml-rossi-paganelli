@@ -36,6 +36,7 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
+            int c = 0;
             lst1.Items.Clear();
 
             string cognome = txt_InputAuthor.Text;
