@@ -32,6 +32,7 @@ namespace EsXml_Paganelli_Rossi
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
 
+
             lst_Print.Items.Clear();
 
 
@@ -48,6 +49,7 @@ namespace EsXml_Paganelli_Rossi
             element.Remove();
 
             xmlDocument.Save(@"../../../libri.xml");
+
 
         }
 
