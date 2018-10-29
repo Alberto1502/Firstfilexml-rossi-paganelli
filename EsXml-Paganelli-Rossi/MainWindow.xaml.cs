@@ -31,7 +31,7 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
-            lstPrint.Items.Clear();
+            lst_Print.Items.Clear();
 
             string cognome = txt_InputAuthor.Text;
         }
@@ -51,7 +51,7 @@ namespace EsXml_Paganelli_Rossi
 
         private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)
         {
-            string titolo = txt_InputKeywords.Text;
+            string titolo = txt_InputTitle.Text;
             int cont = 0;
 
             XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"C:\Users\a.atanasov\Desktop\Elenco\libri.xml"));
