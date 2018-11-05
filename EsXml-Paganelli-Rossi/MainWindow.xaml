@@ -32,11 +32,14 @@
         <TextBox x:Name="txt_NewKindOfBook" HorizontalAlignment="Left" Height="23" Margin="10,402,0,0" TextWrapping="Wrap" Text="Inserisci il nuovo genere che si vuole assegnare al libro" VerticalAlignment="Top" Width="305"/>
         <Label Content="modifica genere di un libro, individuato con il titolo, con un valore inserito in input" HorizontalAlignment="Left" Margin="10,343,0,0" VerticalAlignment="Top" Width="457"/>
         <Button x:Name="btn_CreateNewFile" Content="Crea nuovo file" HorizontalAlignment="Left" Margin="10,470,0,0" VerticalAlignment="Top" Width="305" Click="btn_CreateNewFile_Click"/>
+<<<<<<< HEAD
 
 
         <Label x:Name="copie" Content="" HorizontalAlignment="Left" Margin="314,104,0,0" VerticalAlignment="Top" Width="133"/>
         <Label x:Name="nCopie" Content="" HorizontalAlignment="Left" Margin="314,104,0,0" VerticalAlignment="Top" Width="133"/>
 
 
+=======
+>>>>>>> 4879962087a43a5f148e558a55222bde934cb128
     </Grid>
 </Window>

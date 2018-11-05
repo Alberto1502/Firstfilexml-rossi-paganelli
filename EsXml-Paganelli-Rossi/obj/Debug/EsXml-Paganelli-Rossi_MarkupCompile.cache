@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\
+=======
+C:\Users\alberto.paganelli\source\repos\EsXmlPaganelli\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\obj\Debug\
+>>>>>>> 4879962087a43a5f148e558a55222bde934cb128
 EsXml_Paganelli_Rossi
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\a.atanasov\Desktop\Prova\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\App.xaml
+=======
+C:\Users\alberto.paganelli\source\repos\EsXmlPaganelli\Firstfilexml-rossi-paganelli\EsXml-Paganelli-Rossi\App.xaml
+>>>>>>> 4879962087a43a5f148e558a55222bde934cb128
 11151548125
 
 5-2017746502

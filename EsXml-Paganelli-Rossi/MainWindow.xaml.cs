@@ -32,6 +32,7 @@ namespace EsXml_Paganelli_Rossi
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
             
+<<<<<<< HEAD
             lst_Print.Items.Clear();
 
             string cognome = txt_InputAuthor.Text;
@@ -42,6 +43,9 @@ namespace EsXml_Paganelli_Rossi
                                         where (string)libri.Element("autore").Element("cognome") == cognome
                                         select libri.Element("titolo").Value;
 
+=======
+        }
+>>>>>>> 4879962087a43a5f148e558a55222bde934cb128
 
             foreach (string n in names)
                 lst_Print.Items.Add(n);
@@ -57,8 +61,29 @@ namespace EsXml_Paganelli_Rossi
             element.Remove();
 
             xmlDocument.Save(@"../../../libri.xml");
+        }
+        private void btn_FindAllRomance_Click(object sender, RoutedEventArgs e)
+        {
+            lst_Print.Items.Clear();
+
+           
+            int i = 0;
+            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"C:\Users\alberto.paganelli\Desktop\Elenco\libri.xml"));
+
+            IEnumerable<string> names = from libri in XDocument.Load(@"C:\Users\alberto.paganelli\Desktop\Elenco\libri.xml").Element("Biblioteca").Elements("wiride")
+                                        select libri.Element("genere").Value;
 
 
+
+            foreach (string n in names)
+                if (n == "romanzo" || n == "romanzo breve" || n == "romanzo giallo"|| n== "romanzo satirico" || n=="romanzo psicologico"|| n == "romanzo umoristico")
+                    i++;
+
+<<<<<<< HEAD
+
+=======
+            lst_Print.Items.Add (i);
+>>>>>>> 4879962087a43a5f148e558a55222bde934cb128
         }
 
         private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)
