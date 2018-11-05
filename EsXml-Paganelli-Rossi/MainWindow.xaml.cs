@@ -24,15 +24,11 @@ namespace EsXml_Paganelli_Rossi
             InitializeComponent();
         }
 
-
-
-
-
-
+        /*
+         * Bottone che consente di trovare tutti i libri di un determinato autore inserito in input
+         */
         private void btn_Find_Print1_Click(object sender, RoutedEventArgs e)
         {
-            
-
             lst_Print.Items.Clear();
 
             string cognome = txt_InputAuthor.Text;
@@ -46,6 +42,9 @@ namespace EsXml_Paganelli_Rossi
 
         }
 
+        /*
+         * Bottone atto alla cancellazione del tag "abstract" dal file XML
+         */
         private void btn_DeleteTagAbstract_Click(object sender, RoutedEventArgs e)
         {
             XDocument xmlDocument = XDocument.Load("../../../libri.xml");
@@ -56,8 +55,13 @@ namespace EsXml_Paganelli_Rossi
 
             element.Remove();
 
+            //Salvataggio del doc
             xmlDocument.Save(@"../../../libri.xml");
         }
+
+
+
+        //Ricerca dei libri del genere romanzo
         private void btn_FindAllRomance_Click(object sender, RoutedEventArgs e)
         {
             lst_Print.Items.Clear();
@@ -76,6 +80,9 @@ namespace EsXml_Paganelli_Rossi
                     i++;
         }
 
+
+
+        //Numero di copie inserito il titolo in  input
         private void btn_FindNCopies_Click(object sender, RoutedEventArgs e)
         {
             string titolo = txt_InputTitle.Text;
